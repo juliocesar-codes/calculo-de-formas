@@ -2,8 +2,11 @@ package br.com.engsenai.projeto_calculo_figuras.model;
 
 public class Circunferencia{
 	
-	private double raio;
+	double raio;
 	
+	public void setRaio(double raio) {
+		this.raio = raio;
+	}
 	public double calcularArea() {
 		double area = Math.PI * Math.pow(raio, 2);
 		return area;
